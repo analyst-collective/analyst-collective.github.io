@@ -34,6 +34,7 @@ body {
 .button {
   background-color: $tomato;
   color: #fff;
+  display: inline-block;
   font-size: 1.125rem;
   font-weight: 900;
   padding: rem(10) rem(20);
@@ -93,24 +94,28 @@ h3 {
   font-weight: 900;
 }
 
-main {
-  a {
-    color: $tomato;
-    text-decoration: none;
-  }
+a {
+  color: $tomato;
+  text-decoration: none;
+}
 
-  ul {
-    margin-bottom: 1em;
+ul {
+  list-style-position: inside;
+  list-style-type: disc;
+  margin-bottom: 1em;
 
-    li {
-      line-height: 1.35em;
-      margin-bottom: .5em;
+  li {
+    line-height: 1.35em;
+    margin-bottom: .5em;
 
-      &:last-of-type {
-        margin-bottom: 0;
-      }
+    &:last-of-type {
+      margin-bottom: 0;
     }
   }
+}
+
+strong {
+  font-weight: 900;
 }
 
 .section {
@@ -141,6 +146,11 @@ main {
 
   p {
     color: $gray;
+
+    @include media($desktop) {
+      @include span-columns(6);
+      @include shift(3);
+    }
   }
 }
 
@@ -165,6 +175,13 @@ main {
   }
 }
 
+.alert-bar {
+  background-color: $mustard;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
 .cta-bar {
   margin-bottom: 1rem;
   text-align: center;
@@ -176,6 +193,9 @@ main {
 }
 
 .image-bar {
+  list-style-type: none;
+  text-align: center;
+
   li {
     display: inline-block;
     margin-right: 20px;
@@ -185,8 +205,14 @@ main {
     }
   }
 
-  &--centered {
-    text-align: center;
+  &--stacked {
+  }
+}
+
+.column {
+  @include media($desktop) {
+    @include span-columns(6);
+    @include shift(6);
   }
 }
 
