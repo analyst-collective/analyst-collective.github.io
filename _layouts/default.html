@@ -12,8 +12,16 @@
           </p>
           <h1>Open-Source Analytics</h1>
           <p>Analyst Collective is a community of analysts and software engineers dedicated to building a set of open source tools to help improve analytic workflows.</p>
-          <p class="cta-bar cta-bar--spotlight"><a href="https://ac-slackin.herokuapp.com/" class="button button--white" title="Join the Slack community.">Join the Community</a></p>
+          <p class="cta-bar cta-bar--spotlight"><a href="https://ac-slackin.herokuapp.com/" class="button button--yellow" title="Join the Slack community.">Join the Community</a></p>
         </div>
+      </div>
+      <div class="scroll-header">
+        <svg height="30px" viewBox="0 0 77 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="ac-logo"><path fill="#FFB20F" d="M57.5247525,29.7029703 C56.1881188,31.2376238 54.2079208,32.1782178 51.980198,32.1782178 C47.8712871,32.1782178 44.5544554,28.8613861 44.5544554,24.7524752 C44.5544554,20.6435644 47.8712871,17.3267327 51.980198,17.3267327 C54.1584158,17.3267327 56.1386139,18.2673267 57.5247525,19.8019802 L76.2376238,19.8019802 C73.960396,8.51485149 63.960396,0 51.980198,0 C42.970297,0 35.0990099,4.8019802 30.7425743,12.029703 L49.4059406,49.4059406 C50.2475248,49.5049505 51.0891089,49.5544554 51.9306931,49.5544554 C63.9108911,49.5544554 73.9108911,41.039604 76.1881188,29.7524752 L57.5247525,29.7524752 L57.5247525,29.7029703 Z" id="letter-c"></path><polygon fill="#FF4B3E" id="letter-a" points="32.5742574 39.6039604 27.5742574 29.7029703 21.8811881 29.7029703 30.7425743 11.980198 24.7524752 0 0 49.5049505 11.980198 49.5049505 16.9306931 39.6039604"></polygon></g></svg>    
+
+        <ul class="link-menu">
+          <li><a href="https://ac-slackin.herokuapp.com/" title="Join the Slack community." class="menu-item">Join the Community</a></li>
+          <li><a href="https://github.com/analyst-collective" title="Check out the Analyst Collective Github repos." class="menu-item menu-item--alt">Get the Code</a></li>
+        </ul>
       </div>
     </header>
 
@@ -27,20 +35,35 @@
         </header>
         <div class="container">
           <div class="feature-block">
-            <h3>Data Build Tool</h3>
-            <p>DBT is a CLI interface that compiles and builds data models within a database.</p>
+            <img src="images/icon-dbt.svg" width="42" class="feature-icon" />
+            <div class="feature-text">
+              <h3>Data Build Tool</h3>
+              <p>DBT is a CLI interface that compiles and builds data models within a database.</p>
+            </div>
           </div>
           <div class="feature-block">
-            <h3>Analytics</h3>
-            <p>Data models and analyses built on top of common datasets that can be deployed with DBT.</p>
+            <img src="images/icon-analytics.svg" width="42" class="feature-icon" />
+            <div class="feature-text">
+              <h3>Analytics</h3>
+              <p>Data models and analyses built on top of common datasets that can be deployed with DBT.</p>
+            </div>
           </div>
           <div class="feature-block">
-            <h3>Data Generator</h3>
-            <p>A tool to build lifelike test data to use when testing data models and analysis.</p>
+            <img src="images/icon-data-generator.svg" width="42" class="feature-icon" />
+            <div class="feature-text">
+              <h3>Data Generator</h3>
+              <p>A tool to build lifelike test data to use when testing data models and analysis.</p>
+            </div>
           </div>
           <p class="cta-bar"><a href="https://github.com/analyst-collective" class="button" title="Check out the Analyst Collective Github repos.">Get Started</a></p>
         </div>
       </section>
+
+      <aside class="alert-bar">
+        <div class="container">
+          <p><strong>Latest Blog Post</strong> <span id="blog-post"><span class="loading">Loading..</span></span>. Read more on <a href="https://medium.com/analyst-collective" title="Check out the Analyst Collective on Medium." target="_blank">Medium</a>.</p>
+        </div>
+      </aside>
 
       <section class="section section--gray">
         <header class="section-header">
@@ -50,17 +73,12 @@
           </div>
         </header>
         <div class="container">
+          <img src="images/blocks.svg" width="200" class="cascading-blocks" alt="Blocks cascading down the side of the page." />
           <ul class="image-bar">
-            <li><a href="https://rjmetrics.com" title="Sponsored by RJMetrics"><img src="images/rjmetrics-logo.svg" height="40" /></a></li>
+            <li><a href="https://rjmetrics.com" title="Sponsored by RJMetrics"><img src="images/rjmetrics-logo.svg" alt="The RJMetrics Logo" height="40" /></a></li>
           </ul>
         </div>
       </section>
-
-      <aside class="alert-bar">
-        <div class="container">
-          <p><strong>Latest Blog Post</strong> <span id="blog-post"><span class="loading">Loading..</span></span>. Read more on <a href="" title="Check out the Analyst Collective on Medium.">Medium</a>.</p>
-        </div>
-      </aside>
 
       <section class="section">
         <header class="section-header">
@@ -70,6 +88,7 @@
           </div>
         </header>
         <div class="container">
+          <img src="images/collective-diagram.svg" class="ac-ecosystem" />
           <div class="column">
             <p>Underlying data technology has improved to a point where interactive query response time is no longer The Big Problem. A myriad of tools have been built on top of this technology that provide a wide array of options for analysts looking to analyze and visualize data.</p>
 
@@ -93,14 +112,16 @@
         <p class="legal">Analyst Collective is licensed under an <a href="http://www.apache.org/licenses/LICENSE-2.0" title="View the Apache 2.0 License" target="_blank">Apache 2.0 License</a>.</p>
         <ul class="image-bar">
           <li>
-            <a href="https://github.com/analyst-collective" title="" class="social-icon"><svg id="github-logo" width="37px" height="36px" viewBox="0 0 37 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <path transform="translate(-1026.000000, -2203.000000)" fill="#000000" d="M1044.45383,2203 C1034.26389,2203 1026,2211.26276 1026,2221.4561 C1026,2229.61009 1031.28758,2236.52688 1038.6213,2238.96729 C1039.54467,2239.13724 1039.88116,2238.56736 1039.88116,2238.07791 C1039.88116,2237.64059 1039.8653,2236.47929 1039.85623,2234.93958 C1034.72274,2236.05443 1033.63962,2232.46517 1033.63962,2232.46517 C1032.80009,2230.33292 1031.59008,2229.7653 1031.59008,2229.7653 C1029.91441,2228.621 1031.71697,2228.64366 1031.71697,2228.64366 C1033.56938,2228.77396 1034.54373,2230.54592 1034.54373,2230.54592 C1036.18994,2233.36589 1038.86375,2232.55128 1039.91515,2232.07883 C1040.08283,2230.88695 1040.55981,2230.07347 1041.08664,2229.61235 C1036.98868,2229.1467 1032.68,2227.56281 1032.68,2220.49081 C1032.68,2218.47638 1033.39943,2216.82791 1034.57999,2215.53859 C1034.38965,2215.07181 1033.75632,2213.19447 1034.76126,2210.65435 C1034.76126,2210.65435 1036.31004,2210.15811 1039.83584,2212.54641 C1041.30757,2212.13628 1042.88693,2211.93234 1044.4561,2211.92441 C1046.02413,2211.93234 1047.60236,2212.13628 1049.07635,2212.54641 C1052.59989,2210.15811 1054.1464,2210.65435 1054.1464,2210.65435 C1055.15361,2213.19447 1054.52028,2215.07181 1054.33107,2215.53859 C1055.51389,2216.82791 1056.22766,2218.47638 1056.22766,2220.49081 C1056.22766,2227.58094 1051.91218,2229.14104 1047.80176,2229.59763 C1048.46341,2230.16751 1049.05369,2231.29368 1049.05369,2233.0158 C1049.05369,2235.48228 1049.03103,2237.47291 1049.03103,2238.07791 C1049.03103,2238.57189 1049.36413,2239.1463 1050.29996,2238.96616 C1057.62802,2236.52008 1062.91106,2229.60782 1062.91106,2221.4561 C1062.91106,2211.26276 1054.64717,2203 1044.45383,2203"></path></svg></a>
+            <a href="https://github.com/analyst-collective" title=""><svg id="github-logo" class="social-icon" width="37px" height="36px" viewBox="0 0 37 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><path transform="translate(-1026.000000, -2203.000000)" d="M1044.45383,2203 C1034.26389,2203 1026,2211.26276 1026,2221.4561 C1026,2229.61009 1031.28758,2236.52688 1038.6213,2238.96729 C1039.54467,2239.13724 1039.88116,2238.56736 1039.88116,2238.07791 C1039.88116,2237.64059 1039.8653,2236.47929 1039.85623,2234.93958 C1034.72274,2236.05443 1033.63962,2232.46517 1033.63962,2232.46517 C1032.80009,2230.33292 1031.59008,2229.7653 1031.59008,2229.7653 C1029.91441,2228.621 1031.71697,2228.64366 1031.71697,2228.64366 C1033.56938,2228.77396 1034.54373,2230.54592 1034.54373,2230.54592 C1036.18994,2233.36589 1038.86375,2232.55128 1039.91515,2232.07883 C1040.08283,2230.88695 1040.55981,2230.07347 1041.08664,2229.61235 C1036.98868,2229.1467 1032.68,2227.56281 1032.68,2220.49081 C1032.68,2218.47638 1033.39943,2216.82791 1034.57999,2215.53859 C1034.38965,2215.07181 1033.75632,2213.19447 1034.76126,2210.65435 C1034.76126,2210.65435 1036.31004,2210.15811 1039.83584,2212.54641 C1041.30757,2212.13628 1042.88693,2211.93234 1044.4561,2211.92441 C1046.02413,2211.93234 1047.60236,2212.13628 1049.07635,2212.54641 C1052.59989,2210.15811 1054.1464,2210.65435 1054.1464,2210.65435 C1055.15361,2213.19447 1054.52028,2215.07181 1054.33107,2215.53859 C1055.51389,2216.82791 1056.22766,2218.47638 1056.22766,2220.49081 C1056.22766,2227.58094 1051.91218,2229.14104 1047.80176,2229.59763 C1048.46341,2230.16751 1049.05369,2231.29368 1049.05369,2233.0158 C1049.05369,2235.48228 1049.03103,2237.47291 1049.03103,2238.07791 C1049.03103,2238.57189 1049.36413,2239.1463 1050.29996,2238.96616 C1057.62802,2236.52008 1062.91106,2229.60782 1062.91106,2221.4561 C1062.91106,2211.26276 1054.64717,2203 1044.45383,2203"></path></svg></a>
           </li>
           <li>
-            <a href="https://medium.com/analyst-collective" title=""><svg width="43px" height="36px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path id="medium-logo" transform="translate(-1147.000000, -2203.000000)" fill="#000000" d="M1189.40453,2209.58702 C1189.39641,2209.58052 1189.3899,2209.57198 1189.37974,2209.56711 L1189.36511,2209.55979 L1176.5341,2203.14428 C1176.44753,2203.10079 1176.35648,2203.07153 1176.26423,2203.04796 C1176.14839,2203.01829 1176.03012,2203 1175.91144,2203 C1175.42007,2203 1174.93113,2203.2467 1174.66614,2203.67671 L1167.27926,2215.68104 L1176.54954,2230.74499 L1189.44396,2209.79186 C1189.48663,2209.72196 1189.46631,2209.63579 1189.40453,2209.58702 Z M1163.21049,2212.94658 L1163.21049,2226.61118 L1175.35626,2232.68407 L1163.21049,2212.94658 Z M1177.18113,2233.5965 L1187.17892,2238.5952 C1188.4799,2239.24589 1189.53459,2238.79028 1189.53459,2237.57831 L1189.53459,2213.52208 L1177.18113,2233.5965 Z M1161.10192,2209.60653 L1148.57045,2203.34059 C1148.34407,2203.2276 1148.12866,2203.17395 1147.93357,2203.17395 C1147.38489,2203.17395 1147,2203.59867 1147,2204.31115 L1147,2231.36723 C1147,2232.09149 1147.52999,2232.94906 1148.17784,2233.27299 L1159.21527,2238.7915 C1159.49815,2238.93294 1159.76761,2239 1160.01106,2239 C1160.69712,2239 1161.17833,2238.4692 1161.17833,2237.57831 L1161.17833,2209.72968 C1161.17833,2209.67766 1161.14866,2209.6297 1161.10192,2209.60653 Z"></path></svg></a>
+            <a href="https://medium.com/analyst-collective" title=""><svg id="medium-logo" class="social-icon" width="43px" height="36px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><path transform="translate(-1147.000000, -2203.000000)" d="M1189.40453,2209.58702 C1189.39641,2209.58052 1189.3899,2209.57198 1189.37974,2209.56711 L1189.36511,2209.55979 L1176.5341,2203.14428 C1176.44753,2203.10079 1176.35648,2203.07153 1176.26423,2203.04796 C1176.14839,2203.01829 1176.03012,2203 1175.91144,2203 C1175.42007,2203 1174.93113,2203.2467 1174.66614,2203.67671 L1167.27926,2215.68104 L1176.54954,2230.74499 L1189.44396,2209.79186 C1189.48663,2209.72196 1189.46631,2209.63579 1189.40453,2209.58702 Z M1163.21049,2212.94658 L1163.21049,2226.61118 L1175.35626,2232.68407 L1163.21049,2212.94658 Z M1177.18113,2233.5965 L1187.17892,2238.5952 C1188.4799,2239.24589 1189.53459,2238.79028 1189.53459,2237.57831 L1189.53459,2213.52208 L1177.18113,2233.5965 Z M1161.10192,2209.60653 L1148.57045,2203.34059 C1148.34407,2203.2276 1148.12866,2203.17395 1147.93357,2203.17395 C1147.38489,2203.17395 1147,2203.59867 1147,2204.31115 L1147,2231.36723 C1147,2232.09149 1147.52999,2232.94906 1148.17784,2233.27299 L1159.21527,2238.7915 C1159.49815,2238.93294 1159.76761,2239 1160.01106,2239 C1160.69712,2239 1161.17833,2238.4692 1161.17833,2237.57831 L1161.17833,2209.72968 C1161.17833,2209.67766 1161.14866,2209.6297 1161.10192,2209.60653 Z"></path></svg></a>
           </li>
         </ul>
       </div>
     </footer>
+    <script src="scripts/jquery.waypoints.min.js"></script>
+    <script src="scripts/sticky.min.js"></script>
     <script src="https://storage.googleapis.com/feednami-static/js/feednami-client-v1.0.1.js"></script>
     <script type="text/javascript">
       function getFeed( url ){
@@ -122,7 +143,13 @@
       }
 
       window.onload = function(){
+        // Get Latest Medium Post
         getFeed('https://medium.com/feed/analyst-collective')
+
+        // Sticky Header 
+        var sticky = new Waypoint.Sticky({
+          element: $('.scroll-header')[0]
+        })
       }      
     </script>
   </body>
