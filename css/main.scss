@@ -235,9 +235,21 @@ strong {
 
 .cascading-blocks {
   position: absolute;
-  right: -150px;
+  right: -160px;
   top: -50px;
 
+}
+
+.features {
+  @include media($desktop) {
+    margin-bottom: rem(30);
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 .feature-block {
